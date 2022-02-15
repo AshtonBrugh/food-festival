@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    function createEl(htmlString, attrs, ...children) {
+  function createEl(htmlString, attrs, ...children) {
       if (typeof htmlString !== "string") {
         throw Error("Argument 'htmlString' is required and must be a string");
       }
@@ -31,6 +30,5 @@ $(document).ready(function() {
       return el;
     };
 
-});
 
 module.exports = createEl;
